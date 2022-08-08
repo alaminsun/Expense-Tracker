@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\al-amin\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\al-amin\\.nuget\\packages"
+    ]
+  }
+}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Project\\Expense Tracker\\Expense Tracker.csproj": {}
+    "G:\\Project\\Expense Tracker\\Expense-Tracker\\Expense Tracker.csproj": {}
   },
   "projects": {
-    "G:\\Project\\Expense Tracker\\Expense Tracker.csproj": {
+    "G:\\Project\\Expense Tracker\\Expense-Tracker\\Expense Tracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Project\\Expense Tracker\\Expense Tracker.csproj",
+        "projectUniqueName": "G:\\Project\\Expense Tracker\\Expense-Tracker\\Expense Tracker.csproj",
         "projectName": "Expense Tracker",
-        "projectPath": "G:\\Project\\Expense Tracker\\Expense Tracker.csproj",
+        "projectPath": "G:\\Project\\Expense Tracker\\Expense-Tracker\\Expense Tracker.csproj",
         "packagesPath": "C:\\Users\\al-amin\\.nuget\\packages\\",
-        "outputPath": "G:\\Project\\Expense Tracker\\obj\\",
+        "outputPath": "G:\\Project\\Expense Tracker\\Expense-Tracker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\al-amin\\AppData\\Roaming\\NuGet\\NuGet.Config",

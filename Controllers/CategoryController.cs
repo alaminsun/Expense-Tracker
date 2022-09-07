@@ -33,24 +33,48 @@ namespace Expense_Tracker.Controllers
         }
 
         // GET: CategoryController/Create
-        public ActionResult Create()
+        public IActionResult AddOrEdit(int id = 0)
         {
-            return View();
+            if (id == 0)
+            {
+                return View(new Category());
+            }
+            else
+            {
+                return View(_context.Categories.Find(id));
+            }
+           
         }
 
         // POST: CategoryController/Create
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Create(IFormCollection collection)
+        //{
+        //    try
+        //    {
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    catch
+        //    {
+        //        return View();
+        //    }
+        //}
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<IActionResult> AddOrEdit([Bind("CategoryId,Title,Icon,Type")] Category category)
         {
-            try
+            if (ModelState.IsValid)
             {
+                if (category.CategoryId == 0)
+                    _context.Add(category);
+                else
+                    _context.Update(category);
+                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View();
-            }
+            return View(category);
         }
 
         // GET: CategoryController/Edit/5

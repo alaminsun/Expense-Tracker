@@ -28,7 +28,9 @@ namespace Expense_Tracker
             
             services.AddControllersWithViews();
             services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("DevConnection"))); 
+            options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Mgo+DSMBMAY9C3t2VVhiQlFaclxJXGFWfVJpTGpQdk5xdV9DaVZUTWY/P1ZhSXxRdkxjXn9bcXJXRmRZVkw=");
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

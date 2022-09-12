@@ -98,25 +98,29 @@ namespace Expense_Tracker.Controllers
             }
         }
 
-        // GET: CategoryController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
+        //// GET: CategoryController/Delete/5
+        //public ActionResult Delete(int id)
+        //{
+        //    return View();
+        //}
 
-        // POST: CategoryController/Delete/5
-        [HttpPost]
+        //// POST: CategoryController/Delete/5
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            try
+            if (_context.Categories == null)
             {
-                return RedirectToAction(nameof(Index));
+                return Problem("Entity set 'ApplicationDbContext.Context' is null.");
             }
-            catch
+            var category = await _context.Categories.FindAsync(id);
+            if (category != null)
             {
-                return View();
+                _context.Categories.Remove(category);
             }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
     }
 }

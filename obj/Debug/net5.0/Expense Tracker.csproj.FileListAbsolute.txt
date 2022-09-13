@@ -290,3 +290,5 @@ G:\Project\Expense-Tracker\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-a
 G:\Project\Expense-Tracker\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 G:\Project\Expense-Tracker\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs
 G:\Project\Expense-Tracker\obj\Debug\net5.0\Razor\Views\Category\AddOrEdit.cshtml.g.cs
+G:\Project\Expense-Tracker\obj\Debug\net5.0\Razor\Views\Transaction\Index.cshtml.g.cs
+G:\Project\Expense-Tracker\obj\Debug\net5.0\Razor\Views\Transaction\AddOrEdit.cshtml.g.cs

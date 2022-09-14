@@ -25,11 +25,7 @@ namespace Expense_Tracker.Controllers
             return View(await applicationDbContext.ToListAsync());
         }
 
-        // GET: TransactionController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
+
 
         // GET: TransactionController/Create
         public IActionResult AddOrEdit(int id)
@@ -71,11 +67,6 @@ namespace Expense_Tracker.Controllers
             return View(transaction);
         }
 
-        // GET: TransactionController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
 
         // POST: TransactionController/Delete/5
         [HttpPost, ActionName("Delete")]

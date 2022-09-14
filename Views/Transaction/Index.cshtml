@@ -11,12 +11,12 @@
     <div class="col-md-7">
         <ejs-grid id="transaction" dataSource="@Model" gridLines="None"
                   allowSorting="true" allowPaging="true">
-            <e-grid-pagesettings pageSize="5"></e-grid-pagesettings>
+            <e-grid-pagesettings pageSize="10"></e-grid-pagesettings>
             <e-grid-columns>
                 <e-grid-column headerText="Category" field="CategoryTitleWithIcon"></e-grid-column>
-                <e-grid-column headerText="Date" field="Date" width="110px"
+                <e-grid-column headerText="Date" field="Date" width="115px"
                                type="date" format="dd-MM-yyyy" textAlign="Left"></e-grid-column>
-                <e-grid-column headerText="Amount" field="FormattedAmount" width="100px"></e-grid-column>
+                <e-grid-column headerText="Amount" field="FormattedAmount" textAlign="Right" width="110px"></e-grid-column>
                 <e-grid-column headerText="Action" template="#actionColumnTemplate" width="100px"></e-grid-column>
             </e-grid-columns>
         </ejs-grid>

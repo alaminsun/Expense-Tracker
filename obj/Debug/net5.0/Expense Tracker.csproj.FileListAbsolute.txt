@@ -292,3 +292,5 @@ G:\Project\Expense-Tracker\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.
 G:\Project\Expense-Tracker\obj\Debug\net5.0\Razor\Views\Category\AddOrEdit.cshtml.g.cs
 G:\Project\Expense-Tracker\obj\Debug\net5.0\Razor\Views\Transaction\Index.cshtml.g.cs
 G:\Project\Expense-Tracker\obj\Debug\net5.0\Razor\Views\Transaction\AddOrEdit.cshtml.g.cs
+G:\Project\Expense-Tracker\obj\Debug\net5.0\Razor\Views\Dashboard\Index.cshtml.g.cs
+G:\Project\Expense-Tracker\obj\Debug\net5.0\Razor\Views\Shared\_SideBar.cshtml.g.cs
